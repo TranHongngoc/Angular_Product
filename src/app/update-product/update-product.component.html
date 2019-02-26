@@ -1,0 +1,21 @@
+<h2><a routerLink="/">Back to list</a></h2>
+
+<h1>Update product:</h1>
+<form [formGroup]="postForm" (ngSubmit)="updateProduct()">
+
+  <label>Name : <br><input type="text" placeholder="name" formControlName="name"></label>
+  <br>
+  <div *ngIf="postForm.get('name').invalid && postForm.get('name').touched" style="color:red">
+    Min length 3
+  </div>
+
+  <label>Color :<br><input type="text" placeholder="color" formControlName="color"></label>
+  <br>
+  <div *ngIf="postForm.get('color').invalid && postForm.get('color').touched" style="color:red">
+    Min length 3
+  </div>
+  <button type="submit" style="font-size: 30px">Save</button>
+</form>
+
+<br>
+<h3 *ngIf="isUpdated">{{updatedString}}</h3>

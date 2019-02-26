@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "name": "home",
+      "color": "brown",
+      "id": 2
+    },
+    {
+      "name": "t-shirt",
+      "color": "pink",
+      "id": 3
+    },
+    {
+      "name": "book",
+      "color": "green",
+      "id": 4
+    },
+    {
+      "name": "computer",
+      "color": "black",
+      "id": 5
+    },
+    {
+      "name": "bike",
+      "color": "white",
+      "id": 6
+    }
+  ]
+}
